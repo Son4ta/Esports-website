@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  background-color: #f3f5f7;
+}
+.w {
+ width: 1200px;
+ margin: 0 auto;
+}
+
+/* 头部区域 */
+  .header {
+    padding: 28px 0;
+    /* 清除浮动 */
+    overflow: hidden;
+  }
+.header .logo {
+  width: 200px;
+  height: 45px;
+  float: left;
+  background: url(../images/witlogo.png) no-repeat;
+  background-size: contain;
+}
+.header .logo:hover{
+  width: 200px;
+  height: 45px;
+  background: url(../images/mmexportfa6be74b1208ac6659ae36f6d6676180_16223369.gif) no-repeat;
+  background-size: contain;
+}
+/* .header .logo img {
+  width: 100%;
+  height: 100%;
+} */
+.header .nav {
+  margin-left: 68px;
+  float: left;
+}
+.header .nav li {
+  float: left;
+  padding: 10px 12px;
+  margin-left: 22px;
+  transition: 0.5s;
+}
+
+.header .nav li:hover {
+  background-image: linear-gradient(#f3f5f7, rgb(182, 240, 255));
+  border-bottom: 2px solid #00a4ff;
+}
+
+.header .dropdown .user {
+  float: right;
+}
+.header .dropdown .user .bgcLog {
+  width: 40px;
+  height: 40px;
+  background: url('../images/user1.png') no-repeat;
+  background-size: contain;
+  float: left;
+}
+.header .dropdown .user p {
+  width: auto;
+  height: 40px;
+  float: left;
+  line-height: 40px;
+  margin-left: 8px;
+}
+
+.header .dropdown {
+  float: right;
+}
+
+.header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.header .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.header .dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.header .dropdown:hover .dropdown-content {
+  display: block;
+}
+/* 头部区域 */
+
+
+/* banner模块 */
+  .banner {
+    height: 421px;
+    background-color: #1c036c;
+  }
+  .banner .w {
+    height: 421px;
+    /* background: url(../images/banner2.png) no-repeat; */
+  }
+  .banner .w video{
+    bottom: 0px;
+    height: 421px;
+    width: 820px;
+    z-index:-11;
+    float: left;
+  }  
+  /* banner左侧模块 */
+ .banner .nav {
+    width: 190px;
+    height: 421px;
+    /* padding: 12px 14px; */
+    padding: 0px 0px;
+    float: left;
+    background: rgba(19, 1, 75, 0.6);
+  }
+  .banner .nav li {
+     height: 47px;
+     width: 190px;
+     line-height: 47px;
+     color: #fff;
+     transition: background-color 0.5s;
+     float: left;
+     text-indent: 12px;
+   }
+   .banner .nav li:hover{
+     background-color: rgba(97, 152, 255, 0.6);
+   }
+   
+   .banner .nav li a span {
+     float: right;
+     text-indent: 12px;
+   }
+   .banner .nav li a:hover{
+     color: #0393d9;
+   }
+
+/* banner模块 */
+
+/* 精品区域导航栏区域 */
+.goods {
+  height: 60px;
+  margin-top: 5px;
+ background-color: #fff;
+}
+.goods ul {
+  float: left;
+}
+.goods p {
+  float:right;
+  line-height: 60px;
+  padding-right: 21px;
+  color: #0ba6ff;
+}
+
+.goods li {
+  float: left;
+
+  line-height: 60px;
+}
+
+.goods li a {
+  padding: 0 35px;
+  border-right: 1px solid #ccc;
+  color: #000;
+  font-size: 16px;
+}
+.goods li a:hover {
+  color: #0ba6ff;
+}
+.goods li .none {
+  border: 0;
+}
+
+/* 精品推荐列表模块 */
+.goodsList .goodsTop {
+  padding-top: 34px;
+  padding-right: 21px;
+  padding-bottom: 14px;
+
+  overflow: hidden;
+
+}
+.goodsList .goodsTop h3 {
+  float: left;
+  font-size: 22px;
+}
+.goodsList .goodsTop p {
+  font-size: 16px;
+  color: #ccc;
+  float: right;
+}
+
+.goodsList .goodsItem li {
+  width: 228px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  transition: box-shadow 1s;
+}
+.goodsList .goodsItem li video{
+  width: 100%;
+  height: 100%;
+}
+
+.goodsList .goodsItem li:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.goodsList .goodsItem .marginNone {
+  margin-right: 0;
+}
+.goodsList .goodsItem li .pic {
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+  padding-left: 27px;
+  padding-top: 22px;
+  padding-bottom: 26px;
+}
+
+.goodsList .goodsItem li .pic .info {
+  margin-top: 19px;
+}
+.goodsList .goodsItem li .pic .info .color {
+  color:#ff9250 ;
+  font-size: 18px;
+}
+.goodsList .goodsItem li .pic .info .text {
+  color: #ccc;
+  font-size: 16px;
+}
